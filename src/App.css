@@ -1,0 +1,31 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  max-width: 400px;
+}
+
+@media (max-width: 768px) {
+  .main {
+    width: 90vw;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 600px) {
+  .main {
+    width: 100vw;
+  }
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
